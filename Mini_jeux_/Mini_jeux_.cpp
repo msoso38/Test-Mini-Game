@@ -30,7 +30,7 @@ int main()
 
 		if (mystery_number == number)
 		{
-			std::cout << "Gagne" << std::endl;
+			std::cout << "Gagne\nVous avez reussi a trouver le nombre " << mystery_number << " en " << max_try << " essai !!" << std::endl;
 			break;
 		}
 		else if (number > mystery_number)
@@ -44,12 +44,10 @@ int main()
 
 		if (i == max_try - 1)
 		{
-			std::cout << "Perdu" << std::endl;
+			std::cout << "Perdu, vous avez tenter de trouver le nombre " << mystery_number << " en " << max_try << " essai mais vous avez perdu !!" << std::endl;
 		}
 
 	}
-
-	std::cout << "Vous avez reussi a trouver le nombre " << mystery_number << " en " << try_number << " essai !!" << std::endl;
 
 	std::cin.ignore();
 	return 0;
